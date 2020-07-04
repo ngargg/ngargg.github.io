@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+
+html, body {
+    font-size: 20px;
+    font-family: 'Luckiest Guy', cursive;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    border-radius: 2%;
+    background: url("../img/showcase.jpg") no-repeat top right/cover;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: rgb(50,50,50);
+    height: 8vh;
+    align-items: center;
+}
+
+.header .logo p {
+    color: rgb(255,255,255);
+    text-shadow: 0.1rem 0.5rem 0.9rem rgb(175,175,175);
+    padding-left:1rem;
+    font-size: 1.7rem;
+}
+.header .logo p:hover{
+    cursor: none;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    z-index: 100;
+}
+
+.navbar li a {
+    color:white;
+    padding: 0.40rem 0;
+    margin: 0 1.25rem; 
+    transition: all 1s ease-out;
+    opacity: 0.5;
+}
+
+.navbar li a:hover, .current{
+    border-bottom: 0.1rem solid rgb(175,175,175);
+    padding-bottom: 0.40rem;
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ================END OF nav ==============*/
+
+#showcase{
+    display: flex;
+    height: 92vh;
+    background: url("../img/bg.jpeg") no-repeat top right/cover;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#showcase h1 {
+    background: -webkit-linear-gradient(white,dodgerblue,cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* End of .showcase */
+
+.school,.aim{
+    display: flex;
+    height:40vh;
+    margin:0.5rem;
+    line-height: 2rem;
+    /* width: 100vh; */
+}
+
+.write{
+    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    margin-top: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.highlight{
+    font-weight: 700;
+    background: -webkit-linear-gradient(black,dodgerblue,brown,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img_school{
+    flex: 1;
+    border-radius: 1%;
+}
+
+@media (max-width:605px){
+    .intro{
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .header,.school{
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    .aim{
+        height: 50%;
+        flex-direction: column-reverse;
+    }
+    .school{
+        height: 50%;
+    }
+
+    .header .logo p {
+        font-size: 0.9rem;
+    }
+    .navbar li a {
+        opacity: 1 !important;
+        border-style: none !important;
+    }
+    .img_school{
+        /* display: none; */
+    }
+}
