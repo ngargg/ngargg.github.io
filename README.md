@@ -1,5 +1,5 @@
 # Introduction
 
-It is the repo for website hosted at <a href="ngargg.github.io">ngargg.github.io</a>
+It is the repo for website hosted at <a href="https://ngargg.github.io">ngargg.github.io</a>
 
-<a href="rustp.org">Rust Programming</a>
+<a href="https://rustp.org">Rust Programming</a>
